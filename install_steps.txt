@@ -1,0 +1,61 @@
+-1.
+https://www.djangoproject.com/download/1.5.4/tarball/
+python django_folder/setup.py install
+
+1.after installing python.
+D:\django>mklink django-admin.py c:\Python27\Scripts\django-admin.py
+symbolic link created for django-admin.py <<===>> c:\Python27\Scripts\django-admin.py
+
+
+0.
+django-admin.py startproject diaglitica
+django-admin.py startapp diaglitica
+
+
+0.1
+
+python manage.py runserver 
+
+
+
+
+
+2.
+install mysqldb api for django
+http://sourceforge.net/projects/mysql-python/
+
+3.
+change settings.py 
+	DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'demo',                      # Or path to database file if using sqlite3.
+        # The following settings are not used with sqlite3:
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '3306',                      # Set to empty string for default.
+    }
+}
+
+4. create super user: manju and password:super and email:manjummmvvv18@gmail.com
+
+5. python manage.py syncdb
+
+
+---------ingnore--------------------------------------------------------------------------------------------------------------------------
+'pollsdb': {
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'polls',                      # Or path to database file if using sqlite3.
+        # The following settings are not used with sqlite3:
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '3306',                      # Set to empty string for default.
+    }
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+feature ref
+1. http://www.virtualenv.org/en/latest/
+
+------------------------------------------------------------------------------------------------------------------------------------
